@@ -1,0 +1,24 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+.ion-padding{
+    background-position: 50%;
+    position:absolute;
+    left:0px;
+    top:0;
+    margin-top:-50%;
+    height: 100%;
+    width:100%;
+    margin:0;
+    background-image: url(http://1.bp.blogspot.com/-h0d-xV84HV4/ViVWE1d5XHI/AAAAAAAAAiI/BjdukZ13-ws/s1600/Foto%2B19-10-15%2B18%2B10%2B31.jpg);
+    
+}

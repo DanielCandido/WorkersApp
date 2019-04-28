@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cadastrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Nome</ion-label>
+        <ion-input type="text" name="nome" [(ngModel)]="model.nome"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Sobrenome</ion-label>
+        <ion-input type="text" name="sobrenome" [(ngModel)]="model.sobrenome"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Email</ion-label>
+        <ion-input type="text" name="email" [(ngModel)]="model.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>CPF</ion-label>
+        <ion-input type="text" name="cpf" [(ngModel)]="model.cpf"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>RG</ion-label>
+        <ion-input type="text" name="rg" [(ngModel)]="model.rg"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Nascimento</ion-label>
+        <ion-input type="text" name="nascimento" [(ngModel)]="model.nascimento"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Senha</ion-label>
+        <ion-input type="password" name="senha" [(ngModel)]="model.senha"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Categoria</ion-label>
+        <select>
+          <option *ngFor="let categorias of categorias" value="{{categorias.Id}}" [(ngModel)]="model.categoria">
+            {{categorias.Nome}}</option>
+        </select>
+      </ion-item>
+    </ion-list>
+    <button ion-button block (click)="cadastrarPrestador()" color="primary">Criar conta</button>
+  </div>
+
+</ion-content>
