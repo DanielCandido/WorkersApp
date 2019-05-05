@@ -1,0 +1,40 @@
+ion-header{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    height: 140px;
+}
+
+.perfil{
+    height: 90px;
+    widows: 90px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.titulo-perfil{
+    font-family: cursive,Snell Roundhand;
+    font-size: 18px; 
+}
+
+.circulo{
+    border-radius: 50%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.circulo :hover{
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.icone{
+    height: 45px;
+    width: 45px;
+    margin: 2.5px;
+}

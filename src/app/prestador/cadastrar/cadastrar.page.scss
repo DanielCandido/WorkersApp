@@ -1,0 +1,30 @@
+button{
+    background-color: cornflowerblue;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+ion-list{
+    opacity: 0.8;
+}
+
+select{
+    border: none;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.perfil{
+    height: 50px;
+    widows: 50px;
+    border-radius: 50%;
+    filter: drop-shadow(
+0px 30px 0px #021038
+)
+}
+
+.header-md{
+    background-color: black;
+}

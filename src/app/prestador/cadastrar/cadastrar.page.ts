@@ -21,7 +21,7 @@ export class CadastrarPage implements OnInit {
     this.model.rg='';
     this.model.nascimento='';
     this.model.senha='';
-    this.model.categoria = 0;
+    this.model.categoriaId = 1;
   }
 
   ngOnInit() {
@@ -30,7 +30,7 @@ export class CadastrarPage implements OnInit {
   cadastrarPrestador(){
     this.prestador.cadastrarPrestador(this.model.nome, this.model.sobrenome,
       this.model.email, this.model.cpf, this.model.rg, this.model.nascimento,
-      this.model.senha, this.model.categoria).then(s =>{
+      this.model.senha, this.model.categoriaId).then(s =>{
         console.log("cadastrado");
       }).catch(e => {
         console.log("erro")
@@ -56,5 +56,5 @@ export class User {
   rg: string;
   nascimento: string;
   senha: string;
-  categoria: number;
+  categoriaId: number;
 }

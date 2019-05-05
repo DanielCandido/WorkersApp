@@ -1,14 +1,18 @@
-<ion-header>
+<ion-header style="background-color: yellow;">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Cadastrar</ion-title>
+    <ion-title style="text-align:center; ">Cadastrar</ion-title>
+    <div style="text-align:center;" >
+      <img class="perfil" src="http://danielcandido.blog.br/wp-content/uploads/2019/04/cropped-WhatsApp-Image-2019-04-26-at-09.34.22.jpeg">
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
+    
     <ion-list>
       <ion-item>
         <ion-label stacked>Nome</ion-label>
@@ -39,9 +43,10 @@
         <ion-input type="password" name="senha" [(ngModel)]="model.senha"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label stacked>Categoria</ion-label>
+        
         <select>
-          <option *ngFor="let categorias of categorias" value="{{categorias.Id}}" [(ngModel)]="model.categoria">
+          <option>Categoria</option>
+          <option *ngFor="let categorias of categorias" value="{{categorias.Id}}" [(ngModel)]="model.categoriaId">
             {{categorias.Nome}}</option>
         </select>
       </ion-item>
