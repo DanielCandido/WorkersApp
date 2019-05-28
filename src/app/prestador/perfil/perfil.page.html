@@ -1,15 +1,22 @@
-<ion-header style="background-color: yellow">
-  <div style="text-align:center;" >
-      <img class="perfil" src="http://danielcandido.blog.br/wp-content/uploads/2019/04/cropped-WhatsApp-Image-2019-04-26-at-09.34.22.jpeg">
-    </div>
-    <h4 class="titulo-perfil animated infinite pulse">Bem-Vindo {{prestador.Nome}}</h4>
+<ion-header style="background-color: yellow" *ngIf="prestador">
+    <h3 class="titulo-perfil animated infinite pulse">Bem-Vindo {{prestador.Nome}}</h3>
+    <ion-avatar class="avatar">  
+      <img src="http://danielcandido.blog.br/wp-content/uploads/2019/04/cropped-WhatsApp-Image-2019-04-26-at-09.34.22.jpeg">
+    </ion-avatar>
 </ion-header>
 
 <ion-content >
   <div class="ion-padding">
-    <div class="circulo">
-    <ion-icon class="icone" name="book"></ion-icon>
-    </div>
-    <label style="color:white;">Agenda</label>
+    <ion-grid style="margin-top: 20px;"> 
+      <ion-row align-items: center>
+        <ion-icon class="icone" name="contact"></ion-icon>
+        <h1 style="color: white; padding-left: 5px;">Editar Dados</h1>
+      </ion-row>
+    </ion-grid>   
+    <ion-grid>   
+        <ion-row> 
+          <ion-input class="inputs" type="email" placeholder="Email"></ion-input>
+      </ion-row>
+    </ion-grid>
 </div>
 </ion-content>

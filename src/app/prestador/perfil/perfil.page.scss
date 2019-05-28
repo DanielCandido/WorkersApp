@@ -2,19 +2,26 @@ ion-header{
     background-color: yellow;
     color: black;
     text-align: center;
-    height: 140px;
+    height: 120px;
+    position: initial !important;
 }
 
-.perfil{
-    height: 90px;
-    widows: 90px;
-    border-radius: 50%;
-    padding: 10px;
+.avatar{
+    margin: auto;
+    margin-top: 50px !important;
+    background-color: white;
+    opacity: 0px;
 }
 
 .titulo-perfil{
     font-family: cursive,Snell Roundhand;
     font-size: 18px; 
+}
+
+.inputs{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .circulo{
@@ -25,16 +32,12 @@ ion-header{
     text-align: center;
 }
 
-.circulo :hover{
-    background-color: yellow;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-}
-
 .icone{
     height: 45px;
     width: 45px;
     margin: 2.5px;
+    color: darkgrey;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 5px;
 }
